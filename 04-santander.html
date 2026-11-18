@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102f40">
+  <meta name="description" content="Santander: itinerario del giorno, mappa Google, pernottamento, trasporti e gastronomia in italiano e spagnolo.">
+  <title>Santander | Santander &amp; Bilbao 2026</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="day-0">
+<header class="topbar">
+ <div class="container">
+  <a class="brand" href="index.html" aria-label="Home · Santander e Bilbao">✦ Santander <span style="color:#d7af73">&amp;</span> Bilbao</a>
+  <div class="topactions">
+   <div class="lang-switch" role="group" aria-label="Seleziona lingua / Seleccionar idioma">
+    <button class="lang-btn" type="button" id="lang-it" data-lang="it" aria-pressed="true">🇮🇹 IT</button>
+    <button class="lang-btn" type="button" id="lang-es" data-lang="es" aria-pressed="false">🇪🇸 ES</button>
+   </div>
+   <button class="share-btn" type="button" id="shareBtn" aria-label="Condividi questa pagina">↗ <span id="shareText">Condividi</span></button>
+  </div>
+ </div>
+</header>
+<nav class="site-nav" aria-label="Navigazione principale"><div class="container nav-scroll" id="nav"></div></nav>
+<main class="container daily-page-layout">
+ <section class="page-intro" id="inizio"><a class="back-link" href="index.html" id="backToHome">← Home</a><br><span class="page-date-pill" id="dayDate"></span><h1 id="dayTitle"></h1><p class="lead" id="dayLead"></p></section>
+ <section class="section" id="itinerario"><div class="daily-section" id="dayContent"></div></section>
+ <section class="section daily-food-panel" id="gastronomia"><p class="kicker" id="foodEye"></p><h2 id="foodTitle"></h2><p class="lead" id="foodLead"></p><div class="gastro-area-banner" id="foodZone"></div><div class="restaurant-grid" id="restaurantPicks"></div><h3 class="food-dishes-heading" id="foodDishesHeading"></h3><div class="foodgrid" id="foodGrid"></div><p class="small" id="foodFoot" style="margin-top:16px"></p></section>
+ <section class="section" id="altre-giornate"><p class="kicker" id="moreDaysEye"></p><h2 id="moreDaysTitle"></h2><div class="days-grid" id="dayCards"></div></section>
+</main><footer class="footer"><div class="container footer-row"><div><strong id="footerTitle"></strong><br><small id="footerNote"></small></div><div><small id="sourcesTitle"></small><br><a href="https://www.guggenheim-bilbao.eus/horarios-y-tarifas" rel="noopener" target="_blank">Guggenheim</a> · <a href="https://www.alsa.com/" rel="noopener" target="_blank">ALSA</a> · <a href="https://developers.google.com/maps/documentation/urls/get-started" rel="noopener" target="_blank">Google Maps</a></div></div></footer>
+<div class="toast hidden" role="status" aria-live="polite" id="toast"></div>
+<script src="assets/data.js" defer></script>
+<script src="assets/app.js" defer></script>
+</body></html>

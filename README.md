@@ -1,24 +1,32 @@
-# Santander & Bilbao · 4–8 dicembre 2026
+# Santander & Bilbao — sito multipagina bilingue
 
-Guida di viaggio **bilingue italiano/spagnolo** in un unico file HTML, pronta per GitHub Pages.
+Sito statico pronto per GitHub Pages (nessun server, nessuna chiave API).
+
+## File
+
+- `index.html`: home con voli, alloggi, trasporti, checklist e collegamenti ai giorni.
+- `04-santander.html`: venerdì 4 dicembre — Santander.
+- `05-bilbao.html`: sabato 5 dicembre — Bilbao / Casco Viejo.
+- `06-bilbao.html`: domenica 6 dicembre — Bilbao / Ensanche e Artxanda.
+- `07-guggenheim.html`: lunedì 7 dicembre — Guggenheim e rientro a Santander.
+- `08-rientro.html`: martedì 8 dicembre — aeroporto e rientro.
+- `assets/style.css`: stile responsive.
+- `assets/data.js`: testi e dati in italiano e spagnolo.
+- `assets/app.js`: navigazione, Google Maps, traduzione e checklist.
 
 ## Pubblicazione su GitHub Pages
 
-1. Crea un repository **pubblico** chiamato, per esempio, `santander-bilbao-2026`.
-2. Carica `index.html` nella directory principale del repository (`Add file` → `Upload files` → `Commit changes`). Puoi caricare anche questo README.
-3. Apri **Settings → Pages**.
-4. In **Build and deployment** seleziona `Deploy from a branch`, poi `main` e `/ (root)`, infine **Save**.
-5. Visita `https://TUO-USERNAME.github.io/santander-bilbao-2026/` dopo la pubblicazione.
-6. Copia il link e condividilo via WhatsApp. Il pulsante **Condividi / Compartir** della guida funziona dopo la pubblicazione.
+1. Apri `https://github.com/zizzolman/santander-bilbao-2026`.
+2. Carica **i sei HTML e la cartella `assets`** nella radice del repository, sovrascrivendo il vecchio `index.html`.
+3. Verifica `Settings > Pages > Deploy from a branch > main > / (root)`.
+4. Controlla `Actions` per il deploy e apri `https://zizzolman.github.io/santander-bilbao-2026/`.
 
-## Contenuto e note
+**Importante:** non caricare il file ZIP come unico file. Estrai prima il contenuto e carica i file mantenendo la cartella `assets`.
 
-- Pulsanti 🇮🇹 IT e 🇪🇸 ES: traducono itinerari, tappe, gastronomia, alloggi e checklist.
-- Google Maps incorporato come mappa della zona per ogni giornata. **I percorsi completi sono disponibili con i pulsanti Google Maps**, in modalità pedonale o trasporto pubblico; l'iframe mostra una zona, non tutte le tappe.
-- Pulsanti per i percorsi verso alloggi, stazioni, funicolare e aeroporto.
-- Checklist salvata **solo nel browser del dispositivo**: non si sincronizza tra telefoni.
-- Non servono API key, build, database, account, cookies pubblicitari o pacchetti esterni.
-- I contenuti operativi sono indicativi: verificare orari voli, apertura, biglietti, collegamenti e possibilità di deposito bagagli.
-- Le mappe Google richiedono internet e potrebbero essere bloccate dal browser o dall'ambiente di anteprima; i link Google Maps restano il metodo più affidabile.
+## Note
 
-Fonti operative: [Guggenheim Bilbao](https://www.guggenheim-bilbao.eus/horarios-y-tarifas), [ALSA](https://www.alsa.com/), [Google Maps URLs](https://developers.google.com/maps/documentation/urls/get-started).
+- Il pulsante della lingua salva la preferenza in `localStorage`: rimane attiva anche cambiando pagina.
+- Le spunte vengono salvate **solo nel browser/dispositivo in uso**. Non sono sincronizzate fra i due telefoni.
+- Le mappe Google incorporate mostrano la zona; il percorso completo con tappe usa Google Maps in una nuova scheda. I collegamenti funzionano senza chiave API.
+- Per caricare correttamente le risorse locali, apri la guida pubblicata su GitHub Pages o tramite un server locale.
+- Prezzi, corse autobus, disponibilità dei ristoranti e orari possono variare; verificare per le date del viaggio.
